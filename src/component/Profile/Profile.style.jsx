@@ -70,7 +70,8 @@ export const Wrapper = styled.div`
       font-size: 1.6rem;
       color: var(--clr-white);
     }
-    > P {
+    > a {
+      text-decoration: none;
       font-size: 0.9rem;
       font-weight: 600;
       color: var(--clr-white);
@@ -92,7 +93,8 @@ export const Wrapper = styled.div`
         object-fit: cover;
       }
     }
-    span {
+    a {
+      text-decoration: none;
       color: var(--clr-white);
       font-size: 0.95rem;
       font-family: 700;

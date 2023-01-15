@@ -45,7 +45,7 @@ const Profile = ({ projectRef, skillRef }) => {
         </ul>
         <div className="mail">
           <GrMail />
-          <p>AdenusiAdetayo@gmail.com</p>
+          <a href="mailto:adenusiadetayo@gmail.com">AdenusiAdetayo@gmail.com</a>
         </div>
       </div>
       <div className="links">
@@ -54,15 +54,19 @@ const Profile = ({ projectRef, skillRef }) => {
             <img src={profile__img} alt="tayor" />
           </div>
         </div>
-        <span>
+        <a href="/Adetayo.pdf" target="_blank" rel="noreferrer">
           Resume <FiExternalLink />
-        </span>
-        <span>
+        </a>
+        <a href="https://github.com/tayor99" target="_blank" rel="noreferrer">
           GitHub <FiExternalLink />
-        </span>
-        <span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/adetayo-adenusi/"
+          target="_blank"
+          rel="noreferrer"
+        >
           LinkedIn <FiExternalLink />
-        </span>
+        </a>
       </div>
     </Wrapper>
   );
