@@ -1,11 +1,13 @@
-const SkillCard = ({ header }) => {
+import { Wrapper } from "./SkillCard.style";
+
+const SkillCard = ({ header, skills }) => {
   return (
     <Wrapper>
-      <h1>Languages</h1>
+      <h1>{header}</h1>
       <div className="skill_cardContainer">
-        <h2>HTML</h2>
-        <h2>CSS</h2>
-        <h2>JavaScript</h2>
+        {skills.map((skill) => {
+          return <h2>{skill}</h2>;
+        })}
       </div>
     </Wrapper>
   );

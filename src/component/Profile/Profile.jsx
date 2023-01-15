@@ -3,7 +3,7 @@ import { GrMail } from "react-icons/gr";
 import { FiExternalLink } from "react-icons/fi";
 import profile__img from "../../assets/tayo.jpg";
 
-const Profile = () => {
+const Profile = ({ projectRef, skillRef }) => {
   return (
     <Wrapper>
       <div className="profile">
@@ -19,14 +19,22 @@ const Profile = () => {
           experience of users.
         </p>
         <ul>
-          <li>
+          <li
+            onClick={() => {
+              projectRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <p>01</p>
             <div className="rule">
               <hr />
             </div>
             <p>PROJECTS</p>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              skillRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <p>02</p>
             <div className="rule">
               <hr />

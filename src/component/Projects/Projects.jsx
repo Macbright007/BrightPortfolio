@@ -1,11 +1,12 @@
 import { Wrapper } from "./Projects.style";
 import tayor from "../../assets/tayo.jpg";
 import { FiExternalLink } from "react-icons/fi";
+import SkillCard from "../SkillCard/SkillCard";
 
-const Projects = () => {
+const Projects = ({ projectRef, skillRef }) => {
   return (
     <Wrapper>
-      <div className="project">
+      <div className="project" ref={projectRef}>
         <div className="project__card">
           <img src={tayor} alt="project " />
           <div className="desciption">
@@ -109,13 +110,41 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="skill">
-        <h1>Languages</h1>
-        <div className="skill_cardContainer">
-          <h2>HTML</h2>
-          <h2>CSS</h2>
-          <h2>JavaScript</h2>
-        </div>
+      <div className="skill" ref={skillRef}>
+        <SkillCard header="Languages" skills={["HTML", "CSS", "JavaScript"]} />
+        <SkillCard
+          header="Frameworks"
+          skills={[
+            "JQuery",
+            "Styled Components",
+            "Material UI",
+            "Next",
+            "SAAS",
+            "Tailwind CSS",
+            "Bootstrap",
+          ]}
+        />
+        <SkillCard
+          header="Libraries"
+          skills={[
+            "React",
+            "Firebase",
+            "framer-motion",
+            "Axios",
+            "Jest",
+            "react-router",
+          ]}
+        />
+        <SkillCard
+          header="SoftSkills"
+          skills={[
+            "Detailed",
+            "Strong communicator",
+            "Proactive",
+            "Analytical",
+            "Strong collaborator",
+          ]}
+        />
       </div>
     </Wrapper>
   );

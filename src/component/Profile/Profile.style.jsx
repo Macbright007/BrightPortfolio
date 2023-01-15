@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 45%;
+  position: sticky;
+  height: 100vh;
+  top: 90px;
 
   .profile {
     width: 100%;

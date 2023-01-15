@@ -5,12 +5,14 @@ export const Wrapper = styled.div`
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 20px;
+    margin-top: 30px;
     color: var(--clr-white);
   }
   .skill_cardContainer {
     display: flex;
     gap: 12px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 
   h2 {
