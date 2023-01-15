@@ -50,7 +50,8 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-    > p {
+    > a {
+      text-decoration: none;
       color: var(--clr-black-2);
       font-size: 0.7rem;
       cursor: pointer;

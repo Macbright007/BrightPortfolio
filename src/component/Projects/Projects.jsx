@@ -1,114 +1,32 @@
 import { Wrapper } from "./Projects.style";
-import tayor from "../../assets/tayo.jpg";
+// import tayor from "../../assets/tayo.jpg";
 import { FiExternalLink } from "react-icons/fi";
 import SkillCard from "../SkillCard/SkillCard";
+import { projects } from "../../Data";
 
 const Projects = ({ projectRef, skillRef }) => {
   return (
     <Wrapper>
       <div className="project" ref={projectRef}>
-        <div className="project__card">
-          <img src={tayor} alt="project " />
-          <div className="desciption">
-            <h1>Tayor</h1>
-            <p>Fintech</p>
-            <div className="tools">
-              <p>
-                Website <FiExternalLink />
-              </p>
-              <ul>
-                <li>React</li>
-                <li>Styled components</li>
-                <li>Firebase</li>
-              </ul>
+        {projects.map((project) => (
+          <div className="project__card">
+            <img src={project.img} alt="project " />
+            <div className="desciption">
+              <h1>{project.name}</h1>
+              <p>{project.description}</p>
+              <div className="tools">
+                <a href={project.webLink} target="_blank" rel="noreferrer">
+                  Website <FiExternalLink />
+                </a>
+                <ul>
+                  <li>React</li>
+                  <li>Styled components</li>
+                  <li>Axios</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="project__card">
-          <img src={tayor} alt="project " />
-          <div className="desciption">
-            <h1>Tayor</h1>
-            <p>Fintech</p>
-            <div className="tools">
-              <p>
-                Website <FiExternalLink />
-              </p>
-              <ul>
-                <li>React</li>
-                <li>Styled components</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project__card">
-          <img src={tayor} alt="project " />
-          <div className="desciption">
-            <h1>Tayor</h1>
-            <p>Fintech</p>
-            <div className="tools">
-              <p>
-                Website <FiExternalLink />
-              </p>
-              <ul>
-                <li>React</li>
-                <li>Styled components</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project__card">
-          <img src={tayor} alt="project " />
-          <div className="desciption">
-            <h1>Tayor</h1>
-            <p>Fintech</p>
-            <div className="tools">
-              <p>
-                Website <FiExternalLink />
-              </p>
-              <ul>
-                <li>React</li>
-                <li>Styled components</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project__card">
-          <img src={tayor} alt="project " />
-          <div className="desciption">
-            <h1>Tayor</h1>
-            <p>Fintech</p>
-            <div className="tools">
-              <p>
-                Website <FiExternalLink />
-              </p>
-              <ul>
-                <li>React</li>
-                <li>Styled components</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project__card">
-          <img src={tayor} alt="project " />
-          <div className="desciption">
-            <h1>Tayor</h1>
-            <p>Fintech</p>
-            <div className="tools">
-              <p>
-                Website <FiExternalLink />
-              </p>
-              <ul>
-                <li>React</li>
-                <li>Styled components</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
       <div className="skill" ref={skillRef}>
         <SkillCard header="Languages" skills={["HTML", "CSS", "JavaScript"]} />
