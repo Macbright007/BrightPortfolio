@@ -103,4 +103,19 @@ export const Wrapper = styled.div`
   .skill {
     margin-top: 40px;
   }
+  /* @media (max-width: 1290px) {
+    width: 40%;
+  } */
+  @media (max-width: 1200px) {
+    position: static;
+    height: fit-content;
+    width: 90%;
+    margin: 0 auto !important;
+    margin-bottom: 40px !important;
+    .profile {
+      > ul {
+        display: none;
+      }
+    }
+  }
 `;

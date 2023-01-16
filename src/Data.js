@@ -44,9 +44,9 @@ export const projects = [
     webLink: "https://musicapp-five.vercel.app/",
   },
   {
-    img: repute,
-    name: "Repute",
-    description: "Reputation Manager",
+    img: tayo,
+    name: "Portfolio",
+    description: "Previous Portfolio",
     webLink: "https://portfolio-eight-gamma-72.vercel.app/",
   },
 ];

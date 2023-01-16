@@ -94,4 +94,11 @@ export const Wrapper = styled.div`
       }
     }
   }
+  @media (max-width: 1290px) {
+    /* width: 40%; */
+    .project__card {
+      width: 280px;
+      height: 360px;
+    }
+  }
 `;
