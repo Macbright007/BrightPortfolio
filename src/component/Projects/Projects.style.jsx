@@ -101,4 +101,49 @@ export const Wrapper = styled.div`
       height: 360px;
     }
   }
+  @media (max-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .project__container {
+      width: 100%;
+    }
+    .project {
+      justify-content: center;
+    }
+    .project__card {
+      width: 370px;
+      height: 420px;
+      margin-bottom: 10px;
+    }
+    .skill {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 1089px) {
+    .skill {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 900px) {
+    .skill {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .desciption {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 800px) {
+    .project__card {
+      width: 280px;
+      height: 360px;
+    }
+    .skill {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
 `;
