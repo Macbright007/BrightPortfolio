@@ -9,13 +9,14 @@ const Profile = ({ projectRef, skillRef }) => {
       <div className="profile">
         <h1>Hello, I am Adenusi Adetayo.</h1>
         <p>
-          A Front-end developer currently working as Front-end Engineer at .
-          Proficient in HTML, CSS, JavaScript and TypeScript with working
-          experience using modern libraries and frameworks. I have launched Web
-          and Progressive Web Applications using <span>Reactjs</span>. A strong
-          team player with great communication skills and creative
-          problem-solving abilities. I have an eye for design and keen on the
-          impact on usability related issues on the experience of users.
+          A Front-end developer with a passion for building beautiful and fast
+          web applications. Proficient in HTML, CSS, JavaScript and TypeScript
+          with working experience using modern libraries and frameworks. I have
+          launched Web and Progressive Web Applications using{" "}
+          <span>Reactjs</span>. A strong team player with great communication
+          skills and creative problem-solving abilities. I have an eye for
+          design and keen on the impact on usability related issues on the
+          experience of users.
         </p>
         <ul>
           <li

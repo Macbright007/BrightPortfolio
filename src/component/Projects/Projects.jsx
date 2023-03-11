@@ -32,7 +32,7 @@ const Projects = ({ projectRef, skillRef }) => {
         <div className="skill" ref={skillRef}>
           <SkillCard
             header="Languages"
-            skills={["HTML", "CSS", "JavaScript"]}
+            skills={["HTML", "CSS", "JavaScript", "TypeScript"]}
           />
           <SkillCard
             header="Frameworks"
