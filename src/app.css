@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=PT+Sans+Narrow&display=swap");
+
+* {
+  /* font-family: "Kaushan Script", cursive; */
+  font-family: "Nunito", sans-serif;
+  
+}
+
+.profile__img__container { 
+  background-image: url("./assets/mesef.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  width: 80%;
+  /* border: 2px solid white; */
+  /* box-shadow: .5rem .4rem #4c4c4c; */
+  box-shadow: .1rem .2rem .4rem .1rem grey;
+  animation: move 3s infinite ease alternate;
+  margin-bottom: 3rem;
+  filter: grayscale(100%);
+
+}
+
+@media (max-width: 1200px) {
+  .profile__img__container{
+    border: 2px solid red;
+    width: 95%;
+    background-size: none;
+    margin: auto;
+  }
+}
+
+/* .profile__img__container {
+  border: 2px solid #fff;
+  margin-bottom: 1.5rem;
+  height: 80vh;
+} */
+
+/* .profile__img__container>img { 
+  object-fit: cover;
+  animation: move 3s infinite ease alternate;
+} */
+
+.light{
+  background-color: #e6ded2;
+  color: #111;
+}
+
+.dark{
+  background-color: #111;
+  color: #84683b;
+}
+
+.theme{
+  transition: all 1s ease-in;
+  padding-top: 5rem;
+
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0px) scale(1.03);
+  }
+}

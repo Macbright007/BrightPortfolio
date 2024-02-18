@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import profile__img from "../../assets/1.jpg";
 
 export const Wrapper = styled.div`
   width: 45%;
@@ -9,11 +10,10 @@ export const Wrapper = styled.div`
   .profile {
     width: 100%;
     > h1 {
-      color: var(--clr-white);
-      letter-spacing: 3.5px;
-      font-weight: 700;
-      font-size: 3.4rem;
-      margin-bottom: 50px;
+      // color: var(--clr-white);
+      background: linear-gradient(to right, #4c4c4c, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     > p {
       color: var(--clr-black-2);
@@ -79,10 +79,12 @@ export const Wrapper = styled.div`
     }
   }
   .links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    gap: 40px;
+    gap: 10px;
     margin-top: 45px;
+
     .img__container {
       width: 60px;
       height: 60px;
@@ -90,7 +92,7 @@ export const Wrapper = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        object-fit: cover;
+        // object-fit: cover;
       }
     }
     a {
@@ -98,6 +100,10 @@ export const Wrapper = styled.div`
       color: var(--clr-white);
       font-size: 0.95rem;
       font-family: 700;
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   .skill {
@@ -112,6 +118,7 @@ export const Wrapper = styled.div`
     width: 90%;
     margin: 0 auto !important;
     margin-bottom: 40px !important;
+
     .profile {
       > ul {
         display: none;

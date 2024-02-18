@@ -1,60 +1,56 @@
 import { Wrapper } from "./Projects.style";
-// import tayor from "../../assets/tayo.jpg";
-import { FiExternalLink } from "react-icons/fi";
 import SkillCard from "../SkillCard/SkillCard";
 import { projects } from "../../Data";
+import ProjectCard from "./ProjectCard";
+// import myself from "../../assets/myself.jpg"
 
 const Projects = ({ projectRef, skillRef }) => {
   return (
     <Wrapper>
       <div className="project__container">
+        <div ref={projectRef}>
+          <div className="profile__img__container">
+            {/* <img src={myself} alt="myself" /> */}
+          </div>
         <div className="project" ref={projectRef}>
-          {projects.map((project) => (
-            <div className="project__card">
-              <img src={project.img} alt="project " />
-              <div className="desciption">
-                <h1>{project.name}</h1>
-                <p>{project.description}</p>
-                <div className="tools">
-                  <a href={project.webLink} target="_blank" rel="noreferrer">
-                    Website <FiExternalLink />
-                  </a>
-                  <ul>
-                    <li>React</li>
-                    <li>Styled components</li>
-                    <li>Axios</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          ))}
+          {projects.map((project) => {
+            return <ProjectCard project={project} />;
+          })}
         </div>
+        </div>
+
+        {/* skills section */}
         <div className="skill" ref={skillRef}>
           <SkillCard
             header="Languages"
-            skills={["HTML", "CSS", "JavaScript", "TypeScript"]}
+            skills={[
+              "HTML5",
+              "CSS3",
+              "JavaScript",
+              "TypeScript",
+              "React-Native",
+            ]}
           />
           <SkillCard
             header="Frameworks"
-            skills={[
-              "JQuery",
-              "Styled Components",
-              "Material UI",
-              "Next",
-              "SAAS",
-              "Tailwind CSS",
-              "Bootstrap",
-            ]}
+            skills={["Next", "SAAS", "Tailwind CSS", "Bootstrap"]}
           />
           <SkillCard
             header="Libraries"
             skills={[
               "React",
+              "Styled Components",
               "Firebase",
-              "framer-motion",
               "Axios",
-              "Jest",
               "react-router",
+            ]}
+          />
+          <SkillCard
+            header="State Management and Concepts"
+            skills={[
+              "Context Api",
+              "Design Implementation",
+              "Clean Architecture",
             ]}
           />
           <SkillCard
